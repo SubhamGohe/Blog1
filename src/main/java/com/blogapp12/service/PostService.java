@@ -9,5 +9,4 @@ public interface PostService {
 
     void deletePost(Long id);
 
-    List<PostDto> fetchAllPost();
 }

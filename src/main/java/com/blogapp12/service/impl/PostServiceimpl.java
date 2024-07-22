@@ -5,7 +5,6 @@ import com.blogapp12.payload.PostDto;
 import com.blogapp12.repository.PostRepository;
 import com.blogapp12.service.PostService;
 import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -37,7 +36,6 @@ public class PostServiceimpl implements PostService {
     }
 
     @Override
-    public List<PostDto> fetchAllPost()
     {
         List<Post> post = postRepository.findAll();
         List<PostDto> postDtos = post.stream().map(p -> mapToDto(p)).collect(Collectors.toList());
