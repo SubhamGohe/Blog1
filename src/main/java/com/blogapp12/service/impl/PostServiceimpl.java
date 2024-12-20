@@ -35,13 +35,13 @@ public class PostServiceimpl implements PostService {
         postRepository.deleteById(id);
     }
 
-    @Override
-    {
-        List<Post> post = postRepository.findAll();
-        List<PostDto> postDtos = post.stream().map(p -> mapToDto(p)).collect(Collectors.toList());
-        return postDtos;
-
-    }
+//    @Override
+//    {
+//        List<Post> post = postRepository.findAll();
+//        List<PostDto> postDtos = post.stream().map(p -> mapToDto(p)).collect(Collectors.toList());
+//        return postDtos;
+//
+//    }
 
 
     Post mapToEntity(PostDto postDto) {

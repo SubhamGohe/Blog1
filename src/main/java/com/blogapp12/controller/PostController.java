@@ -43,10 +43,10 @@ public class PostController {
         postService.deletePost(id);
         return new ResponseEntity<>("Post Id Delete !",HttpStatus.OK);
     }
-     @GetMapping
-        return new ResponseEntity<>(postDtos,HttpStatus.OK);
-
-    }
+//     @GetMapping
+//        return new ResponseEntity<>(postDtos,HttpStatus.OK);
+//
+//    }
      //httplocalhost:8080/api/posts?pageNo=0&pagesixe= 5
 
 
